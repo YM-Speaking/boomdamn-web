@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+</head>
+<body>
+    <!-- input标签，type属性值不同功能也不同，type: text、password、radio、checkbox、file -->
+    文本框：<input type="text" placeholder="我是输入提醒">
+    <br>
+    密码框：<input type="password">
+    <br>
+    单选框：<input type="radio" name="gender" checked>男
+    <input type="radio" name="gender">女
+    <br>
+    多选框：<input type="checkbox" checked>
+    <br>
+    兴趣爱好：<input type="checkbox">敲代码
+    <input type="checkbox">前端代码
+    <input type="checkbox">后端代码
+    <br>
+    上传单个文件：<input type="file">
+    <br>
+    上传文件（多选）：<input type="file" multiple>
+    <br>
+    下拉菜单：
+    <select name="menu" id="1">
+        <option>北京</option>
+        <option>上海</option>
+        <option>成都</option>
+        <option selected>厦门</option>
+    </select>
+    <br>
+    文本域（多行输入文本）：<textarea name="input" id="1">我是文本域</textarea>
+    <br>
+    label标签示例如下（增大点击范围）
+    <br>
+    性别：
+    <input type="radio" name="gender1" id="man" checked> <label for="man">男</label>
+    <label><input type="radio" name="gender1">女</label>
+    <br>
+    <!-- 按钮type：submit提交按钮（默认功能）、reset重置按钮，点击后将表单控件恢复默认值、button普通按钮，默认没有功能，一般配合JS使用 -->
+    按钮：<button type="submit">提交按钮</button>
+    <button type="reset">重置按钮</button>
+    <button type="button">普通按钮</button>
+    <br>
+    按钮示例
+    <br>
+    <!-- 表单区域 -->
+    <!-- action是发送数据的地址 -->
+    <form action="">
+        用户名：<input type="text">
+        <br>
+        密码：<input type="password">
+        <br>
+        <button type="submit">提交</button>
+        <button type="reset">重置</button>
+    </form>
+</body>
+</html>
