@@ -20,6 +20,12 @@
             <td>100</td>
             <td>100</td>
         </tr>
+        <tr>
+            <td>总结</td>
+            <td>全市第一</td>
+            <td>全市第一</td>
+            <td>全市第一</td>
+        </tr>
      </table>
      <!-- 表格结构标签，thead 表格头部 tbody 表格主体 tfoot 表格底部 -->
      <table border="1">
@@ -39,6 +45,44 @@
                 <td>100</td>
             </tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <td>总结</td>
+                <td>全市第一</td>
+                <td>全市第一</td>
+                <td>全市第一</td>
+            </tr>
+        </tfoot>
+     </table>
+     <!-- 合并单元格，保留最左最上的单元格，添加属性（取值是数字，表示需要合并的单元格数量，跨行合并，保留最上单元格—rowspan，跨列合并，保留最左单元格-colspan -->
+     <table border="1">
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>语文</th>
+                <th>数学</th>
+                <th>英语</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>张三</td>
+                <td>99</td>
+                <td rowspan="2">100</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>李四</td>
+                <td>98</td>
+                <td>80</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>总结</td>
+                <td colspan="3">全市第一</td>
+            </tr>
+        </tfoot>
      </table>
 </body>
 </html>
